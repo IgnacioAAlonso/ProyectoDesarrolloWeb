@@ -1,0 +1,76 @@
+/*CONTACTO*/
+.contenedorGrid__main{
+    .contenedorContacto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 4% 0% 0% 15%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas: "contacto redes formulario";
+        .contenedorContacto__informacion{
+            grid-area: contacto;
+            text-align: start;
+            margin-bottom: 2%;
+            .contenedorContacto__datos-informacion{
+                margin-bottom: 6%;
+                font-size: 5mm;
+                .contenedorContacto__imagen-datos{
+                    width: 20px;
+                }
+            }
+        }
+        .contenedorContacto__redes{
+            grid-area: redes;
+            text-align: start;
+            .contenedorContacto__enlace-redes{
+                color: #000000;     
+                .contenedorContacto__texto-redes{
+                    margin-bottom: 6%;
+                    font-size: 5mm;
+                    .contenedorContacto__imagen-redes{
+                        width: 20px;
+                    }
+                }
+            }
+            .contenedorContacto__enlace-redes:hover{
+                color: #000000;
+            }
+        }
+        .contenedorContacto__formulario{
+            .formularioContacto{
+                text-align: start;
+                grid-area: formulario;
+                text-transform: uppercase;
+                background-color: #ebd8b765;
+                width: 500px;
+                margin-top: -4%;
+                margin-bottom: 5%;
+                .formularioContacto__contenido{
+                    .formularioContacto__texto-contenido{
+                        margin-top: 1%;
+                        margin-bottom: 2%;
+                        margin-left: 2%;
+                        .formularioContacto__input-contenido{
+                            width: 90%;
+                            height: 30px;
+                        }
+                        .formularioContacto__input-contenido--boton{
+                            width: 30%;
+                            height: 40px;
+                            margin-right: 7%;
+                            margin-bottom: 2%;
+                            float: right;
+                            border-style: none;
+                            background-color: #c6a9a3;
+                            border-radius: 20px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+/* -------------------------------------------------- PANTALLAS ---------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px){
+    .contenedorGrid{
+        .contenedorGrid__header{
+            position: relative;
+            .menuInicio{
+                margin-bottom: 0%;
+                .menuInicio__container{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    .menuElementos{
+                        .menuElementos__lista{
+                            .menuElementos__elemento-lista--desplegable:hover{
+                                .menuElementos__submenu-elemento{
+                                    display: none;
+                                }
+                            }
+                        }
+                        .menuElementos__redes{
+                            .menuElementos__enlace-redes{
+                                .menuElementos__imagen-redes{
+                                    display: none;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            .nombreTitulo{
+                min-height: 0vh;
+            }  
+       }
+    }
+    /*NOSOTROS*/
+    .contenedorGrid__main{
+        .cajaEstilo{
+            width: 100%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+    }
+
+    /*-- CONTACTO --*/
+
+    .contenedorGrid__main{
+        .contenedorContacto{
+            width: 80%;
+            margin: 4% 0% 0% 15%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: "contacto" 
+                                "redes" 
+                                "formulario";
+            .contenedorContacto__informacion{
+                text-align: start;
+                margin-bottom: 0%;
+                .contenedorContacto__datos-informacion{
+                    margin-bottom: 1%;
+                }
+            }
+            .contenedorContacto__redes{
+                text-align: start;
+                margin-bottom: 2%;
+                margin-top: 2%;
+                .contenedorContacto__enlace-redes{       
+                    .contenedorContacto__texto-redes{
+                        margin-bottom: 1%;
+                    }
+                }
+            }
+            .contenedorContacto__formulario{
+                .formularioContacto{
+                    margin: 0%;
+                    width: 400px;
+                    margin-bottom: 7%;
+                }
+            }
+        }
+    }
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1065px){
+    .contenedorGrid{
+        .contenedorGrid__header{
+            .menuInicio{
+                flex-wrap: wrap;
+                .menuInicio__container{
+                    .menuElementos{
+                        .menuElementos__lista{
+                            .menuElementos__elemento-lista--desplegable:hover{
+                                .menuElementos__submenu-elemento{
+                                    display: none;
+                                }
+                            }
+                        }
+                        .menuElementos__redes{
+                            .menuElementos__enlace-redes{
+                                .menuElementos__imagen-redes{
+                                    display: none;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        .nombreTitulo{
+            min-height: 0vh;
+        }      
+       }
+    }
+    /*-- CONTACTO --*/
+
+    .contenedorGrid__main{
+        .contenedorContacto{
+            width: 80%;
+            margin: 4% 0% 0% 15%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: "contacto" 
+                                  "redes" 
+                                  "formulario";
+            .contenedorContacto__informacion{
+                text-align: start;
+                margin-bottom: 0%;
+                .contenedorContacto__datos-informacion{
+                    margin-bottom: 1%;
+                }
+            }
+            .contenedorContacto__redes{
+                text-align: start;
+                margin-bottom: 2%;
+                margin-top: 2%;
+                .contenedorContacto__enlace-redes{       
+                    .contenedorContacto__texto-redes{
+                        margin-bottom: 1%;
+                    }
+                }
+            }
+            .contenedorContacto__formulario{
+                .formularioContacto{
+                    margin-top: 0%;
+                }
+            }
+        }
+    }
+}

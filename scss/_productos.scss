@@ -1,0 +1,73 @@
+/*PRODUCTOS*/
+.contenedorGrid__main{
+    .contenedorGrid__catalogoVinos{
+        margin: 0;
+        .contenedorGrid__catalogoVinos-categorias{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            .menuInicio__elemento-lista{
+                display: flex;
+                margin-left: 20%;
+                padding: 0;         
+                .menuInicio__enlace-elemento {
+                    color: #000000;
+                    font-size: 5mm;
+                    text-decoration: none;
+                    display: block;
+                    position: relative;
+                    display: flex;
+                    z-index: 1;
+                    padding: 0;
+                    margin: .7%;
+                }
+                .menuInicio__enlace-elemento:hover{
+                    color: #000000;
+                    position: relative;
+                    z-index: 0;
+                    text-decoration: underline;
+                }
+            }
+            .menuInicio__elemento-lista--boldCenter{
+                position: relative;
+                font-weight: bold;
+                align-self: center;
+                justify-self: center;
+                margin-left: 0%;
+                margin-bottom: 5%; 
+                .menuInicio__enlace-elemento {
+                    font-size: 7mm;
+                }
+                .menuInicio__enlace-elemento:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        .contenedorGrid__catalogoVinos-main{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0;
+            .contenedorGrid__catalogoVinos-imagen{
+                width: 200px;
+                height: 210px;
+                opacity: .9;
+                padding-top: 7px;
+                margin-bottom: 3px;
+                border-top: 2px solid #949494;
+                transition: all 1.2s ease;
+            }
+            .contenedorGrid__catalogoVinos-imagen:hover{ 
+                opacity: 1;
+                transform: scale(2, 2);
+                position: relative;
+                z-index: 1;
+                border-top: none;   
+                display: block;
+                padding: 0;
+                box-shadow: 0px 0px 15px 10px #8b8b8b;
+            }     
+        }
+    }
+}

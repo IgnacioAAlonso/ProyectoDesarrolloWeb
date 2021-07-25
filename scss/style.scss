@@ -1,0 +1,72 @@
+@import "headerinicio";
+@import "productos";
+@import "bodyGrid";
+@import "footer";
+@import "fuentes";
+@import "nosotros";
+@import "contacto";
+@import "pantallas";
+
+
+*{
+    margin: 10;
+    padding: 0;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+body{
+    background-color: #f8f9fa;
+}
+
+/*TITULO DE LAS PAGINAS*/
+.tituloProductos{
+    display: flex;
+    margin-top: 2%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    .tituloProductos__texto{
+        width: 60%;
+        font-family: LibreBaskervilleRegular;
+        text-transform: uppercase;
+        border-bottom: solid 2px #000000;
+        padding-bottom: 1%;
+        border-top: solid 2px #000000;
+        padding-top: 1%;
+        text-align: center;
+    }
+}
+
+/*MOCK DE LA PAGINA COMBOS*/
+.boxCombo{
+    margin: 0;
+    .boxCombo__imagen{
+        .boxCombo__contenido-imagen{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .boxCombo__descripcion{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .boxCombo__titulo-descripcion{
+            height: 10%;
+        }
+        .boxCombo__subtitulo-descripcion{
+            height: 7%;
+            justify-self: center;
+        }
+        .boxCombo__texto-descripcion{
+            height: 60%;
+            display: flex;
+            .boxCombo__parrafo-descripcion{
+                margin-left: -2%;
+            }
+        }
+    }
+}
