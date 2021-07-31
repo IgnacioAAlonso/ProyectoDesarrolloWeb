@@ -1,8 +1,81 @@
 .contenedorGrid__footer{
+    width: 100%;
+    .contenedorGrid__footer-all{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px;
+        .contenedorGrid__body{
+            display: flex;
+            justify-content: space-between;
+            .contenedorGrid__columInfo-body{
+                max-width: 400px;
+                .contenedorGrid__titulo-columInfo{
+                    font-size: 22px;
+                }
+                .contenedorGrid__texto-columInfo{
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+            }
+            .contenedorGrid__columRedes-body{
+                max-width: 400px;
+                .contenedorGrid__titulo-columRedes{
+                    font-size: 22px;
+                }
+                .contenedorGrid__fila-columRedes{
+                    margin-top: 20px;
+                    display: flex;
+                    .contenedorGrid__imagen-columRedes{
+                        width: 36px;
+                        height: 36px;
+                    }
+                    .contenedorGrid__label-columRedes{
+                        margin-top: 10px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .contenedorGrid__columContacto-body{
+                max-width: 400px;
+                .contenedorGrid__titulo-columContacto{
+                    font-size: 22px;
+                }
+                .contenedorGrid__fila-columContacto{
+                    margin-top: 20px;
+                    display: flex;
+                    .contenedorGrid__imagen-columContacto{
+                        width: 36px;
+                        height: 36px;
+                    }
+                    .contenedorGrid__label-columContacto{
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        max-width: 140px;
+                    }
+                }
+            }
+        }
+    }
     .contenedorGrid__capsula-footer{
-        .contenedorGrid__titulo-footer{
-            text-align: end;
-            font-family: LibreBaskervilleRegular;
+        width: 100%;
+        background: #101010;
+        .contenedorGrid__capsula-footer--alinear{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            .contenedorGrid__derechos-capsula{
+                color: #C7C7C7;
+            }
+            .contenedorGrid__informacion-capsula{
+                color: #C7C7C7;
+                .contenedorGrid__enlace-capsula{
+                    text-decoration: none;
+                    color: #C7C7C7;
+                }
+            }
         }
     }
 }

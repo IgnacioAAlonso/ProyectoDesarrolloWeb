@@ -4,24 +4,26 @@
         .contenedorGrid__header--imagen-#{$i}{
             background-image: url(../imagenes/404886.jpg);
             background-position: 25% 75%;
-            background-size: 100%;
+            background-repeat: no-repeat;
         }
     }
     @if $i == 3 {
         .contenedorGrid__header--imagen-#{$i}{
             background-image: url(../imagenes/Food-Drink.jpg);
             background-position: 25% 75%;
-            background-size: 100%;
+            background-repeat: no-repeat;
         }
     }
     @if $i == 4 {   
         .contenedorGrid__header--imagen-#{$i}{
             background-image: url(../imagenes/thumb-1920-168613.jpg);
+            background-repeat: no-repeat;
         }
     }
     @if $i == 5 {
         .contenedorGrid__header--imagen-#{$i}{
             background-image: url(../imagenes/thumb-1920-443997.jpg);
+            background-repeat: no-repeat;
         }
     }
 }
@@ -168,6 +170,6 @@
         background-color: #c4c4c4;
         overflow: hidden;
         grid-area: footer;
-        box-shadow: 0px 0px 15px 5px #000000;
+        box-shadow: 0px 0px 10px 2px #000000;
     }
 }
