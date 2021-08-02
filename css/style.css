@@ -201,18 +201,20 @@
 .contenedorGrid__header--imagen-2 {
   background-image: url(../imagenes/404886.jpg);
   background-position: 25% 75%;
-  background-size: 100%; }
+  background-repeat: no-repeat; }
 
 .contenedorGrid__header--imagen-3 {
   background-image: url(../imagenes/Food-Drink.jpg);
   background-position: 25% 75%;
-  background-size: 100%; }
+  background-repeat: no-repeat; }
 
 .contenedorGrid__header--imagen-4 {
-  background-image: url(../imagenes/thumb-1920-168613.jpg); }
+  background-image: url(../imagenes/thumb-1920-168613.jpg);
+  background-repeat: no-repeat; }
 
 .contenedorGrid__header--imagen-5 {
-  background-image: url(../imagenes/thumb-1920-443997.jpg); }
+  background-image: url(../imagenes/thumb-1920-443997.jpg);
+  background-repeat: no-repeat; }
 
 .contenedorGrid {
   width: 100%;
@@ -314,11 +316,68 @@
     background-color: #c4c4c4;
     overflow: hidden;
     grid-area: footer;
-    box-shadow: 0px 0px 15px 5px #000000; }
+    box-shadow: 0px 0px 10px 2px #000000; }
 
-.contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__titulo-footer {
-  text-align: end;
-  font-family: LibreBaskervilleRegular; }
+.contenedorGrid__footer {
+  width: 100%; }
+  .contenedorGrid__footer .contenedorGrid__footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px; }
+    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body {
+      display: flex;
+      justify-content: space-between; }
+      .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columInfo-body {
+        max-width: 400px; }
+        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columInfo-body .contenedorGrid__titulo-columInfo {
+          font-size: 22px; }
+        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columInfo-body .contenedorGrid__texto-columInfo {
+          font-size: 14px;
+          margin-top: 20px; }
+      .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body {
+        max-width: 400px; }
+        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__titulo-columRedes {
+          font-size: 22px; }
+        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__fila-columRedes {
+          margin-top: 20px;
+          display: flex; }
+          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__fila-columRedes .contenedorGrid__imagen-columRedes {
+            width: 36px;
+            height: 36px; }
+          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__fila-columRedes .contenedorGrid__label-columRedes {
+            margin-top: 10px;
+            margin-left: 20px; }
+      .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body {
+        max-width: 400px; }
+        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__titulo-columContacto {
+          font-size: 22px; }
+        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__fila-columContacto {
+          margin-top: 20px;
+          display: flex; }
+          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__fila-columContacto .contenedorGrid__imagen-columContacto {
+            width: 36px;
+            height: 36px; }
+          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__fila-columContacto .contenedorGrid__label-columContacto {
+            margin-top: 10px;
+            margin-left: 20px;
+            max-width: 140px; }
+  .contenedorGrid__footer .contenedorGrid__capsula-footer {
+    width: 100%;
+    background: #101010; }
+    .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px; }
+      .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear .contenedorGrid__derechos-capsula {
+        color: #C7C7C7; }
+      .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear .contenedorGrid__informacion-capsula {
+        color: #C7C7C7; }
+        .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear .contenedorGrid__informacion-capsula .contenedorGrid__enlace-capsula {
+          text-decoration: none;
+          color: #C7C7C7; }
 
 @font-face {
   font-family: LibreBaskervilleBold;
@@ -414,8 +473,6 @@
           display: none; }
         .contenedorGrid .contenedorGrid__header .menuInicio .menuInicio__container .menuElementos .menuElementos__redes .menuElementos__enlace-redes .menuElementos__imagen-redes {
           display: none; }
-    .contenedorGrid .contenedorGrid__header .nombreTitulo {
-      min-height: 0vh; }
   /*NOSOTROS*/
   .contenedorGrid__main .cajaEstilo {
     width: 100%;
@@ -436,15 +493,29 @@
     .contenedorGrid__main .contenedorContacto .contenedorContacto__redes {
       text-align: start;
       margin-bottom: 2%;
-      margin-top: 2%; }
+      margin-top: 5%; }
       .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes .contenedorContacto__texto-redes {
         margin-bottom: 1%; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto {
-      margin: 0%;
-      width: 400px;
-      margin-bottom: 7%; } }
+    .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario {
+      margin-top: 5%; }
+      .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto {
+        margin: 0%;
+        width: 400px;
+        margin-bottom: 7%; }
+  /*-- FOOTER --*/
+  .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body {
+      margin-top: 20px;
+      width: 400px; }
+    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body {
+      margin-top: 20px;
+      width: 400px; } }
 
-/*TABLET*/
+/* -------------------------------------------------- PANTALLA TABLET ---------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1065px) {
   .contenedorGrid .contenedorGrid__header .menuInicio {
     flex-wrap: wrap; }
@@ -452,8 +523,6 @@
       display: none; }
     .contenedorGrid .contenedorGrid__header .menuInicio .menuInicio__container .menuElementos .menuElementos__redes .menuElementos__enlace-redes .menuElementos__imagen-redes {
       display: none; }
-  .contenedorGrid .contenedorGrid__header .nombreTitulo {
-    min-height: 0vh; }
   /*-- CONTACTO --*/
   .contenedorGrid__main .contenedorContacto {
     width: 80%;
@@ -473,7 +542,19 @@
       .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes .contenedorContacto__texto-redes {
         margin-bottom: 1%; }
     .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto {
-      margin-top: 0%; } }
+      margin-top: 0%; }
+  /*-- FOOTER --*/
+  .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body {
+      margin-top: 20px;
+      width: 400px; }
+    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body {
+      margin-top: 20px;
+      width: 400px; } }
 
 * {
   margin: 10;

@@ -29,9 +29,6 @@
                     }
                 }
             }
-            .nombreTitulo{
-                min-height: 0vh;
-            }  
        }
     }
     /*NOSOTROS*/
@@ -64,7 +61,7 @@
             .contenedorContacto__redes{
                 text-align: start;
                 margin-bottom: 2%;
-                margin-top: 2%;
+                margin-top: 5%;
                 .contenedorContacto__enlace-redes{       
                     .contenedorContacto__texto-redes{
                         margin-bottom: 1%;
@@ -72,6 +69,7 @@
                 }
             }
             .contenedorContacto__formulario{
+                margin-top: 5%;
                 .formularioContacto{
                     margin: 0%;
                     width: 400px;
@@ -80,9 +78,31 @@
             }
         }
     }
+
+    /*-- FOOTER --*/
+    .contenedorGrid__footer{
+        
+        .contenedorGrid__footer-all{
+            
+            .contenedorGrid__body{
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .contenedorGrid__columRedes-body{
+                    margin-top: 20px;
+                    width: 400px;
+                }
+                .contenedorGrid__columContacto-body{
+                    margin-top: 20px;
+                    width: 400px;
+                }
+            }
+        }
+    }
 }
 
-/*TABLET*/
+/* -------------------------------------------------- PANTALLA TABLET ---------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1065px){
     .contenedorGrid{
         .contenedorGrid__header{
@@ -107,10 +127,7 @@
                         }
                     }
                 }
-            }
-        .nombreTitulo{
-            min-height: 0vh;
-        }      
+            }     
        }
     }
     /*-- CONTACTO --*/
@@ -144,6 +161,28 @@
             .contenedorContacto__formulario{
                 .formularioContacto{
                     margin-top: 0%;
+                }
+            }
+        }
+    }
+
+    /*-- FOOTER --*/
+    .contenedorGrid__footer{
+        
+        .contenedorGrid__footer-all{
+            
+            .contenedorGrid__body{
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .contenedorGrid__columRedes-body{
+                    margin-top: 20px;
+                    width: 400px;
+                }
+                .contenedorGrid__columContacto-body{
+                    margin-top: 20px;
+                    width: 400px;
                 }
             }
         }
