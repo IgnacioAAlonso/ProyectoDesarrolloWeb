@@ -2,27 +2,27 @@
 
     @if $i == 2 {   
         .contenedorGrid__header--imagen-#{$i}{
-            background-image: url(../imagenes/404886.jpg);
+            background-image: url(../imagenes/Vinos-Bodega-Vinoteca.jpg);
             background-position: 25% 75%;
             background-repeat: no-repeat;
         }
     }
     @if $i == 3 {
         .contenedorGrid__header--imagen-#{$i}{
-            background-image: url(../imagenes/Food-Drink.jpg);
+            background-image: url(../imagenes/Combo-Quesos-Vino-Copas-Comida.jpg);
             background-position: 25% 75%;
             background-repeat: no-repeat;
         }
     }
     @if $i == 4 {   
         .contenedorGrid__header--imagen-#{$i}{
-            background-image: url(../imagenes/thumb-1920-168613.jpg);
+            background-image: url(../imagenes/Paisaje-viñedo-vinoteca.jpg);
             background-repeat: no-repeat;
         }
     }
     @if $i == 5 {
         .contenedorGrid__header--imagen-#{$i}{
-            background-image: url(../imagenes/thumb-1920-443997.jpg);
+            background-image: url(../imagenes/Sirviendo-una-copa-de-vino-tinto.jpg);
             background-repeat: no-repeat;
         }
     }
@@ -43,14 +43,20 @@
         font-family: LibreBaskervilleRegular;
         z-index: 0;
         grid-area: header;
+        .menuInicio--scroll{
+            background-color:#8a89895d;
+            position: sticky;
+                top: 0px;
+            z-index: 10;
+            width: 100%;
+        }
         .menuInicio{
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             text-transform: uppercase;
             justify-content: center;
-            .menuElementos{
-                
+            .menuElementos{   
                 padding: 0;
                 margin: 0;
                 .menuElementos__lista{

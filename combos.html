@@ -17,7 +17,7 @@
 <body>
     <div class="contenedorGrid">
       <header class="contenedorGrid__header contenedorGrid__header--imagen-3">
-        <nav class="navbar navbar-expand-lg navbar-light menuInicio">
+        <nav class="navbar navbar-expand-lg navbar-light menuInicio" id="navBar">
           <div class="container-fluid menuInicio__container">
             <button class="navbar-toggler bg-white float-left" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -69,13 +69,13 @@
   
         <div class="nombreTitulo">
           <a class="nombreTitulo__enlaces" href="index.html">
-            <h1 class="nombreTitulo__titulo-enlaces">HABLAME</h1>
+            <h2 class="nombreTitulo__titulo-enlaces">HABLAME</h2>
           </a>
           <a class="nombreTitulo__enlaces" href="index.html">
-            <h1 class="nombreTitulo__titulo-enlaces"> DE</h1>
+            <h2 class="nombreTitulo__titulo-enlaces"> DE</h2>
           </a>
           <a class="nombreTitulo__enlaces" href="index.html">
-            <h1 class="nombreTitulo__titulo-enlaces"> PASIONES</h1>
+            <h2 class="nombreTitulo__titulo-enlaces"> PASIONES</h2>
           </a>
           <a class="nombreTitulo__enlaces" href="index.html">
             <h6 class="nombreTitulo__subtitulo-enlaces">– COMBOS –</h6>
@@ -93,19 +93,23 @@
         <section class="clearfix">
           <div class="row boxCombo justify-content-center">
             
-            <div class="col-md-4 col-sm-12 col-12 mb-3 mt-3 boxCombo__imagen">
-              <img class="boxCombo__contenido-imagen" src="imagenes/01.malbec.jpg" alt="imagen del combo">
+            <div class="col-md-6 col-sm-12 col-12 mb-3 mt-3 boxCombo__imagen">
+              <img class="boxCombo__contenido-imagen" src="imagenes/Vino-Botella-Hey-Malbec.jpg" alt="imagen del combo">
             </div>
           
-            <div class="col-md-7 col-sm-12 col-12 mb-3 mt-3 boxCombo__descripcion">
+            <div class="col-md-5 col-sm-12 col-12 mb-3 mt-3 boxCombo__descripcion">
               <div class="row boxCombo__titulo-descripcion">
-                <h3> Combo Box 1</h3>
+                <h3 class="row boxCombo__titulo-descripcion--size"> Combo Box 1</h3>
               </div>
               <div class="row boxCombo__subtitulo-descripcion">
                 <h6> - Contenido - </h6>
               </div>
-              <div class="row boxCombo__texto-descripcion justify-content-start">
-                <p class="boxCombo__parrafo-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officia libero distinctio exercitationem iste possimus aliquam ducimus obcaecati expedita. Reprehenderit.</p>
+              <div class="row boxCombo__texto-descripcion">
+                <p class="boxCombo__parrafo-descripcion">Rojo rubí intenso. En nariz, se presenta frutado, con notas de fruta negra y toques especiados que recuerdan a la vainilla, pimiento rojo y pimientas, mientras, en boca, se reafirman los acentos frutados. Acompañado en combo con dos copas. Ideal para regalo o consumo propio.</p>
+              </div>
+
+              <div class="row boxCombo__boton-descripcion">
+                <a href="#"  class="boxCombo__comprar-descripcion">Comprar</a>
               </div>
             </div>
   
@@ -120,9 +124,9 @@
           <div class="contenedorGrid__body">
   
             <div class="contenedorGrid__columInfo-body">
-              <h2 class="contenedorGrid__titulo-columInfo">Mas informacion de la compañia</h2>
+              <h2 class="contenedorGrid__titulo-columInfo">Más Información</h2>
               <p class="contenedorGrid__texto-columInfo">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, possimus? Dolore error aliquam ullam iusto temporibus facilis suscipit similique possimus?
+                Nuestra visión es vender vinos ricos e inolvidables que sean fieles al lugar especial del que provienen. Haciendole honor a la historia del vino argentino.
               </p>
             </div>
   
@@ -130,35 +134,39 @@
               <h2 class="contenedorGrid__titulo-columRedes">Redes Sociales</h2>
               
               <div class="contenedorGrid__fila-columRedes">
-                <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/facebook-logo-white.png" alt="Icono de Facebook">
-                <label class="contenedorGrid__label-columRedes">Siguenos en Facebook</label>
+                <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/facebook-logo-black.png" alt="Icono de Facebook">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <label class="contenedorGrid__label-columRedes">Siguenos en Facebook</label>
+                </a>
               </div>
   
               <div class="contenedorGrid__fila-columRedes">
-                <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/instagram-logo-white.png" alt="Icono de Instagram">
-                <label class="contenedorGrid__label-columRedes">Siguenos en Instagram</label>
+                <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/instagram-logo-black.png" alt="Icono de Instagram">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <label class="contenedorGrid__label-columRedes">Siguenos en Instagram</label>
+                </a>
               </div>
   
               <div class="contenedorGrid__fila-columRedes">
-                <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/EMAIL-WEB.png" alt="Icono de Gmail">
-                <label class="contenedorGrid__label-columRedes">Gmail</label>
+                <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/icone-gmail-logo-png-noire.png" alt="Icono de Gmail">
+                <label class="contenedorGrid__label-columRedes">mail@gmail.com</label>
               </div>
             </div>
   
             <div class="contenedorGrid__columContacto-body">
-              <h2 class="contenedorGrid__titulo-columContacto">Informacio de Contacto</h2>
+              <h2 class="contenedorGrid__titulo-columContacto">Información de Contacto</h2>
             
               <div class="contenedorGrid__fila-columContacto">
-                <img class="contenedorGrid__imagen-columContacto" src="imagenes/Logo/EMAIL-WEB.png" alt="Icono de una Casa">
-                <label class="contenedorGrid__label-columContacto">La Romana,
-                  Republica Dominicana
-                  Manuel del Cabral
-                  Casa 21</label>
+                <img class="contenedorGrid__imagen-columContacto" src="imagenes/Logo/Casa-Logo.png" alt="Icono de una Casa">
+                <label class="contenedorGrid__label-columContacto">Calle 861,
+                  CABA
+                  Buenos Aires,
+                  1440</label>
               </div>
   
               <div class="contenedorGrid__fila-columContacto">
-                <img class="contenedorGrid__imagen-columContacto" src="imagenes/Logo/EMAIL-WEB.png" alt="Icono de un telefono">
-                <label class="contenedorGrid__label-columContacto">11 5872 7493</label>
+                <img class="contenedorGrid__imagen-columContacto" src="imagenes/Logo/Telefono-Logo.png" alt="Icono de un telefono">
+                <label class="contenedorGrid__label-columContacto">11 2345 6789</label>
               </div>
   
               <div class="contenedorGrid__fila-columContacto">
@@ -191,6 +199,14 @@
 
     </div>
     <script src="js/bootstrap.js"></script>
+    <!--
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.getElementById("navBar");
+        header.classList.toggle("menuInicio--scroll", window.scrollY>0);
+      })
+    </script>
+    -->
 </body>
 
 </html>
