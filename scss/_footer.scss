@@ -1,18 +1,32 @@
-$colorText: #C7C7C7;
+$colorBack: #111;
+$colorDetail: #f00;
+$colorText: #999;
+
+@mixin tituloBefore() {
+    content: '';
+    position: absolute;
+        bottom: -5px;
+        left: 0;
+    width: 50px;
+    height: 2px;
+    background: $colorDetail;
+}
+
+@mixin justifyBetween() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .contenedorGrid__footer{
     position: relative;
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    background: #111;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    background: $colorBack;
+    @include justifyBetween();
     .contenedorGrid__body{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        @include justifyBetween();
         flex-direction: row;
         .contenedorGrid__columInfo-footer{
             width: 40%;
@@ -23,16 +37,10 @@ $colorText: #C7C7C7;
                 margin-bottom: 15px;
             }
             .contenedorGrid__titulo-columInfo::before{
-                content: '';
-                position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                width: 50px;
-                height: 2px;
-                background: #f00;
+                @include tituloBefore();
             }
             .contenedorGrid__texto-columInfo{
-                color: #999;
+                color: $colorText;
             }
 
             .contenedorGrid__redes{
@@ -58,7 +66,7 @@ $colorText: #C7C7C7;
                         }
                     }
                     .contenedorGrid__redes-enlace:hover{
-                        background: #F00;
+                        background: $colorDetail;
                      }
                 }
             }
@@ -73,20 +81,14 @@ $colorText: #C7C7C7;
                 margin-bottom: 15px;
             }
             .contenedorGrid__titulo-columLinks::before{
-                content: '';
-                position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                width: 50px;
-                height: 2px;
-                background: #f00;
+                @include tituloBefore();
             }
             .contenedorGrid__links{
                 margin-left: -32px;
                 .contenedorGrid__links-list{
                     list-style: none;
                     .contenedorGrid__links-enlace{
-                        color: #999;
+                        color: $colorText;
                         text-decoration: none;
                         margin-bottom: 10px;
                         display: inline-block;
@@ -107,13 +109,7 @@ $colorText: #C7C7C7;
                 margin-bottom: 15px;
             }
             .contenedorGrid__titulo-columContacto::before{
-                content: '';
-                position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                width: 50px;
-                height: 2px;
-                background: #f00;
+                @include tituloBefore();
             }
             .contenedorGrid__contacto{
                 position: relative;
@@ -127,11 +123,11 @@ $colorText: #C7C7C7;
                         margin-right: 10px;
                     }
                     .contenedorGrid__contacto-span{
-                        color: #999;
+                        color: $colorText;
                     }
                     .contenedorGrid__contacto-info{
                         .contenedorGrid__contacto-enlace{
-                            color: #999;
+                            color: $colorText;
                             text-decoration: none;
                         }
                         .contenedorGrid__contacto-enlace:hover{

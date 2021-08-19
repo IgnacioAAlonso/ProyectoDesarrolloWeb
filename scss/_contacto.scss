@@ -1,8 +1,20 @@
+$colorBack: #353535;
+
+@mixin justifyCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin justifyStart() {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .contenedorGrid__main{
     .contenedorAll{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include justifyCenter();
         min-height: 100vh;
         .contenedorContacto{
             position: relative;
@@ -15,7 +27,7 @@
                     top: 40px;
                     width: 350px;
                 height: calc(100% - 80px);
-                background: #353535;
+                background: $colorBack;
                 z-index: 1;
                 padding: 40px;
                 display: flex;
@@ -81,9 +93,7 @@
                 height: 100%;
                 background: #fff;
                 box-shadow: 0 50px 50px rgba(0,0,0,0.25);
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
+                @include justifyStart();
                 flex-direction: column;
                 .contenedorContacto__titulo-formulario{
                     color: #111;
@@ -99,9 +109,7 @@
                     .cajaFormulario__info{
                         position: relative;
                         margin-bottom: 35px;
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: flex-start;
+                        @include justifyStart();
                         .cajaFormulario__input-info{
                             width: 100%;
                             resize: none;
@@ -119,7 +127,7 @@
                             font-size: 12px;
                             font-weight: 500;
                             letter-spacing: 1px;
-                            color: #353535;
+                            color: $colorBack;
                         }
                         .cajaFormulario__input-info--area{
                             height: 120px;
@@ -127,7 +135,7 @@
                         .cajaFormulario__input-info--boton{
                             position: relative;
                             cursor: pointer;
-                            background: #353535;
+                            background: $colorBack;
                             color: #fff;
                             border: none;
                             max-width: 150px;

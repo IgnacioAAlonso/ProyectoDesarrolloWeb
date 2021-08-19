@@ -6,6 +6,7 @@
 @import "nosotros";
 @import "contacto";
 @import "pantallas";
+@import "combos";
 
 
 *{
@@ -36,58 +37,5 @@ body{
         border-top: solid 2px #000000;
         padding-top: 1%;
         text-align: center;
-    }
-}
-
-/*MOCK DE LA PAGINA COMBOS*/
-.boxCombo{
-    margin: 0;
-    .boxCombo__imagen{
-        .boxCombo__contenido-imagen{
-            width: 90%;
-            height: 320px;
-            object-fit: cover;
-            object-position: center center;
-            box-shadow: 4px 4px 5px 0 rgb(106, 106, 106);
-        }
-    }
-    .boxCombo__descripcion{
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .boxCombo__titulo-descripcion{
-            height: 10%;
-            width: 80%;
-            margin-bottom: 4%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .boxCombo__titulo-descripcion--size{
-                font-size: 12mm;
-                font-style: italic;
-                align-self: center;
-                width: 300px;
-            }
-        }
-        .boxCombo__subtitulo-descripcion{
-            height: 7%;
-        }
-        .boxCombo__texto-descripcion{
-            height: 40%;
-            display: flex;
-            margin-top: 3%;
-            .boxCombo__parrafo-descripcion{
-                margin-left: -2%;
-                text-align: justify;
-            }
-        }
-        .boxCombo__boton-descripcion{
-            border: solid black 2px;
-            padding: 1%;
-            .boxCombo__comprar-descripcion{
-                color: black;
-            }
-        }
     }
 }

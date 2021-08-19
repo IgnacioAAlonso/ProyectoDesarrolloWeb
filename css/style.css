@@ -464,7 +464,7 @@
               color: #fff;
               font-size: 20px; }
           .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__redes .contenedorGrid__redes-list .contenedorGrid__redes-enlace:hover {
-            background: #F00; }
+            background: #f00; }
     .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer {
       position: relative;
       width: 25%; }
@@ -807,35 +807,6 @@
       margin-top: 20px;
       width: 400px; } }
 
-* {
-  margin: 10;
-  padding: 0; }
-
-a {
-  color: #ffffff;
-  text-decoration: none; }
-
-body {
-  background-color: #f8f9fa; }
-
-/*TITULO DE LAS PAGINAS*/
-.tituloProductos {
-  display: flex;
-  margin-top: 2%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center; }
-  .tituloProductos .tituloProductos__texto {
-    width: 60%;
-    font-family: LibreBaskervilleRegular;
-    text-transform: uppercase;
-    border-bottom: solid 2px #000000;
-    padding-bottom: 1%;
-    border-top: solid 2px #000000;
-    padding-top: 1%;
-    text-align: center; }
-
-/*MOCK DE LA PAGINA COMBOS*/
 .boxCombo {
   margin: 0; }
   .boxCombo .boxCombo__imagen .boxCombo__contenido-imagen {
@@ -874,4 +845,32 @@ body {
       border: solid black 2px;
       padding: 1%; }
       .boxCombo .boxCombo__descripcion .boxCombo__boton-descripcion .boxCombo__comprar-descripcion {
-        color: black; }
+        color: #000000; }
+
+* {
+  margin: 10;
+  padding: 0; }
+
+a {
+  color: #ffffff;
+  text-decoration: none; }
+
+body {
+  background-color: #f8f9fa; }
+
+/*TITULO DE LAS PAGINAS*/
+.tituloProductos {
+  display: flex;
+  margin-top: 2%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  .tituloProductos .tituloProductos__texto {
+    width: 60%;
+    font-family: LibreBaskervilleRegular;
+    text-transform: uppercase;
+    border-bottom: solid 2px #000000;
+    padding-bottom: 1%;
+    border-top: solid 2px #000000;
+    padding-top: 1%;
+    text-align: center; }
