@@ -33,10 +33,11 @@
     width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, auto);
+	grid-template-rows: repeat(4, auto);
 	grid-template-areas: "header header header"
 						 "contenido contenido contenido"
-						 "footer footer footer";
+						 "footer footer footer"
+                         "copyright copyright copyright";
     .contenedorGrid__header{
         width: 100%;
         min-height: 100vh;
@@ -173,9 +174,14 @@
         justify-content: center;
     }
     .contenedorGrid__footer{
-        background-color: #c4c4c4;
         overflow: hidden;
         grid-area: footer;
-        box-shadow: 0px 0px 10px 2px #000000;
+    }
+    .contenedorGrid__copyrightText{
+        grid-area: copyright;
+        width: 100%;
+        background: #181818;
+        text-align: center;
+        color: #999;
     }
 }

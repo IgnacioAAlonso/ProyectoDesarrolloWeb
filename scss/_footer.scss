@@ -1,84 +1,148 @@
 $colorText: #C7C7C7;
 
 .contenedorGrid__footer{
+    position: relative;
     width: 100%;
-    .contenedorGrid__footer-all{
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        padding: 40px;
-        .contenedorGrid__body{
-            display: flex;
-            justify-content: space-between;
-            .contenedorGrid__columInfo-body{
-                max-width: 400px;
-                .contenedorGrid__titulo-columInfo{
-                    font-size: 22px;
-                }
-                .contenedorGrid__texto-columInfo{
-                    font-size: 14px;
-                    margin-top: 20px;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .contenedorGrid__body{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .contenedorGrid__columInfo-footer{
+            width: 40%;
+            .contenedorGrid__titulo-columInfo{
+                position: relative;
+                color: #fff;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            .contenedorGrid__titulo-columInfo::before{
+                content: '';
+                position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                width: 50px;
+                height: 2px;
+                background: #f00;
+            }
+            .contenedorGrid__texto-columInfo{
+                color: #999;
+            }
+
+            .contenedorGrid__redes{
+                margin-top: 20px;
+                margin-left: -32px;
+                display: flex;
+                .contenedorGrid__redes-list{
+                    list-style: none;
+                    .contenedorGrid__redes-enlace{
+                       display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        background: #222;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 10px;
+                        text-decoration: none;
+                        border-radius: 4px;
+                        .fab{
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
+                    .contenedorGrid__redes-enlace:hover{
+                        background: #F00;
+                     }
                 }
             }
-            .contenedorGrid__columRedes-body{
-                max-width: 400px;
-                .contenedorGrid__titulo-columRedes{
-                    font-size: 22px;
-                }
-                .contenedorGrid__fila-columRedes{
-                    margin-top: 20px;
-                    display: flex;
-                    .contenedorGrid__imagen-columRedes{
-                        width: 36px;
-                        height: 36px;
-                    }
-                    .contenedorGrid__label-columRedes{
-                        margin-top: 10px;
-                        margin-left: 20px;
-                        color: #000000;
-                    }
-                }
+        }
+        .contenedorGrid__columLinks-footer{
+            position: relative;
+            width: 25%;
+            .contenedorGrid__titulo-columLinks{
+                position: relative;
+                color: #fff;
+                font-weight: 500;
+                margin-bottom: 15px;
             }
-            .contenedorGrid__columContacto-body{
-                max-width: 400px;
-                .contenedorGrid__titulo-columContacto{
-                    font-size: 22px;
-                }
-                .contenedorGrid__fila-columContacto{
-                    margin-top: 20px;
-                    display: flex;
-                    .contenedorGrid__imagen-columContacto{
-                        width: 36px;
-                        height: 36px;
+            .contenedorGrid__titulo-columLinks::before{
+                content: '';
+                position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                width: 50px;
+                height: 2px;
+                background: #f00;
+            }
+            .contenedorGrid__links{
+                margin-left: -32px;
+                .contenedorGrid__links-list{
+                    list-style: none;
+                    .contenedorGrid__links-enlace{
+                        color: #999;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                        display: inline-block;
                     }
-                    .contenedorGrid__label-columContacto{
-                        margin-top: 10px;
-                        margin-left: 20px;
-                        max-width: 140px;
+                    .contenedorGrid__links-enlace:hover{
+                        color: #fff;
                     }
                 }
             }
         }
-    }
-    .contenedorGrid__capsula-footer{
-        width: 100%;
-        background: #101010;
-        .contenedorGrid__capsula-footer--alinear{
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            .contenedorGrid__derechos-capsula{
-                color: $colorText;
+        .contenedorGrid__columContacto-footer{
+            width: calc(35% - 60px);
+            margin-right: 0 !important;
+            .contenedorGrid__titulo-columContacto{
+                position: relative;
+                color: #fff;
+                font-weight: 500;
+                margin-bottom: 15px;
             }
-            .contenedorGrid__informacion-capsula{
-                color: $colorText;
-                .contenedorGrid__enlace-capsula{
-                    text-decoration: none;
-                    color: $colorText;
+            .contenedorGrid__titulo-columContacto::before{
+                content: '';
+                position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                width: 50px;
+                height: 2px;
+                background: #f00;
+            }
+            .contenedorGrid__contacto{
+                position: relative;
+                .contenedorGrid__contacto-list{
+                    display: flex;
+                    margin-bottom: 16px;
+                    margin-left: -32px;
+                    .contenedorGrid__contacto-spanIcon{
+                        color: #fff;
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+                    .contenedorGrid__contacto-span{
+                        color: #999;
+                    }
+                    .contenedorGrid__contacto-info{
+                        .contenedorGrid__contacto-enlace{
+                            color: #999;
+                            text-decoration: none;
+                        }
+                        .contenedorGrid__contacto-enlace:hover{
+                            color: #fff;
+                        }
+                    }
                 }
             }
+        }
+        .contenedorGrid__body--margin{
+            margin-right: 30px;
         }
     }
 }

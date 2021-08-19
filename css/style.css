@@ -147,7 +147,8 @@
     .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-categorias .menuInicio__elemento-lista {
       display: flex;
       margin-left: 20%;
-      padding: 0; }
+      padding: 0;
+      cursor: pointer; }
       .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-categorias .menuInicio__elemento-lista .menuInicio__enlace-elemento {
         color: #000000;
         font-size: 5mm;
@@ -175,28 +176,111 @@
       .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-categorias .menuInicio__elemento-lista--boldCenter .menuInicio__enlace-elemento:hover {
         text-decoration: none; }
   .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0; }
-    .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-imagen {
-      width: 200px;
-      height: 210px;
-      opacity: .9;
-      padding-top: 7px;
-      margin-bottom: 3px;
-      border-top: 2px solid #949494;
-      transition: all 1.2s ease; }
-    .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-imagen:hover {
-      opacity: 1;
-      transform: scale(2, 2);
-      position: relative;
-      z-index: 1;
-      border-top: none;
-      display: block;
-      padding: 0;
-      box-shadow: 0px 0px 15px 10px #8b8b8b; }
+    /*
+            .contenedorGrid__catalogoVinos-imagen{
+                width: 200px;
+                height: 210px;
+                opacity: .9;
+                padding-top: 7px;
+                margin-bottom: 3px;
+                border-top: 2px solid #949494;
+                transition: all 1.2s ease;
+            }
+            .contenedorGrid__catalogoVinos-imagen:hover{ 
+                opacity: 1;
+                transform: scale(2, 2);
+                position: relative;
+                z-index: 1;
+                border-top: none;   
+                display: block;
+                padding: 0;
+                box-shadow: 0px 0px 15px 10px #8b8b8b;
+            }   
+            */ }
+    .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-imgBox {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        display: block; }
+        .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-imgBox .contenedorGrid__catalogoVinos-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.5s ease-in;
+          transform-origin: right; }
+        .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-imgBox .contenedorGrid__catalogoVinos-action {
+          position: absolute;
+          top: 10px;
+          right: 10px; }
+          .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-imgBox .contenedorGrid__catalogoVinos-action .contenedorGrid__catalogoVinos-actionItem {
+            position: relative;
+            list-style: none;
+            width: 35px;
+            height: 35px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4px;
+            cursor: pointer;
+            transition: transform 0.5s;
+            transform: translateX(60px); }
+            .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-imgBox .contenedorGrid__catalogoVinos-action .contenedorGrid__catalogoVinos-actionItem .contenedorGrid__catalogoVinos-actionImg {
+              width: 25px;
+              height: 25px; }
+            .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-imgBox .contenedorGrid__catalogoVinos-action .contenedorGrid__catalogoVinos-actionItem .contenedorGrid__catalogoVinos-actionSpan {
+              position: absolute;
+              right: 37px;
+              top: 50%;
+              transition: transform 0.5s;
+              transform: translateY(-50%) translateX(-20px);
+              white-space: nowrap;
+              padding: 4px 6px;
+              background: #fff;
+              color: #333;
+              font-weight: 500;
+              font-size: 12px;
+              border-radius: 4px;
+              pointer-events: none;
+              opacity: 0;
+              transition: 0.5%; }
+          .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-imgBox .contenedorGrid__catalogoVinos-action .contenedorGrid__catalogoVinos-actionItem:hover .contenedorGrid__catalogoVinos-actionSpan {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0px); }
+      .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-content {
+        padding: 10px; }
+        .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-content .contenedorGrid__catalogoVinos-productName .contenedorGrid__catalogoVinos-productNameText {
+          font-size: 18px;
+          font-weight: 500;
+          margin: 5px 0; }
+        .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card .contenedorGrid__catalogoVinos-content .contenedorGrid__catalogoVinos-productPrice .contenedorGrid__catalogoVinos-productPriceText {
+          font-size: 15px;
+          font-weight: 500; }
+    .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .hide {
+      display: none; }
+    .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card:hover .contenedorGrid__catalogoVinos-imgBox .contenedorGrid__catalogoVinos-image {
+      transform: scale(1.5); }
+    .contenedorGrid__main .contenedorGrid__catalogoVinos .contenedorGrid__catalogoVinos-main .contenedorGrid__catalogoVinos-card:hover .contenedorGrid__catalogoVinos-action .contenedorGrid__catalogoVinos-actionItem {
+      transform: translateX(0px); }
 
 .contenedorGrid__header--imagen-2 {
   background-image: url(../imagenes/Vinos-Bodega-Vinoteca.jpg);
@@ -220,8 +304,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header header header" "contenido contenido contenido" "footer footer footer"; }
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "contenido contenido contenido" "footer footer footer" "copyright copyright copyright"; }
   .contenedorGrid .contenedorGrid__header {
     width: 100%;
     min-height: 100vh;
@@ -319,72 +403,130 @@
     align-items: center;
     justify-content: center; }
   .contenedorGrid .contenedorGrid__footer {
-    background-color: #c4c4c4;
     overflow: hidden;
-    grid-area: footer;
-    box-shadow: 0px 0px 10px 2px #000000; }
+    grid-area: footer; }
+  .contenedorGrid .contenedorGrid__copyrightText {
+    grid-area: copyright;
+    width: 100%;
+    background: #181818;
+    text-align: center;
+    color: #999; }
 
 .contenedorGrid__footer {
-  width: 100%; }
-  .contenedorGrid__footer .contenedorGrid__footer-all {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px; }
-    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body {
-      display: flex;
-      justify-content: space-between; }
-      .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columInfo-body {
-        max-width: 400px; }
-        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columInfo-body .contenedorGrid__titulo-columInfo {
-          font-size: 22px; }
-        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columInfo-body .contenedorGrid__texto-columInfo {
-          font-size: 14px;
-          margin-top: 20px; }
-      .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body {
-        max-width: 400px; }
-        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__titulo-columRedes {
-          font-size: 22px; }
-        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__fila-columRedes {
-          margin-top: 20px;
-          display: flex; }
-          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__fila-columRedes .contenedorGrid__imagen-columRedes {
-            width: 36px;
-            height: 36px; }
-          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body .contenedorGrid__fila-columRedes .contenedorGrid__label-columRedes {
-            margin-top: 10px;
-            margin-left: 20px;
-            color: #000000; }
-      .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body {
-        max-width: 400px; }
-        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__titulo-columContacto {
-          font-size: 22px; }
-        .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__fila-columContacto {
-          margin-top: 20px;
-          display: flex; }
-          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__fila-columContacto .contenedorGrid__imagen-columContacto {
-            width: 36px;
-            height: 36px; }
-          .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body .contenedorGrid__fila-columContacto .contenedorGrid__label-columContacto {
-            margin-top: 10px;
-            margin-left: 20px;
-            max-width: 140px; }
-  .contenedorGrid__footer .contenedorGrid__capsula-footer {
-    width: 100%;
-    background: #101010; }
-    .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      padding: 10px; }
-      .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear .contenedorGrid__derechos-capsula {
-        color: #C7C7C7; }
-      .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear .contenedorGrid__informacion-capsula {
-        color: #C7C7C7; }
-        .contenedorGrid__footer .contenedorGrid__capsula-footer .contenedorGrid__capsula-footer--alinear .contenedorGrid__informacion-capsula .contenedorGrid__enlace-capsula {
-          text-decoration: none;
-          color: #C7C7C7; }
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .contenedorGrid__footer .contenedorGrid__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer {
+      width: 40%; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__titulo-columInfo {
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 15px; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__titulo-columInfo::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #f00; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__texto-columInfo {
+        color: #999; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__redes {
+        margin-top: 20px;
+        margin-left: -32px;
+        display: flex; }
+        .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__redes .contenedorGrid__redes-list {
+          list-style: none; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__redes .contenedorGrid__redes-list .contenedorGrid__redes-enlace {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px; }
+            .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__redes .contenedorGrid__redes-list .contenedorGrid__redes-enlace .fab {
+              color: #fff;
+              font-size: 20px; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__redes .contenedorGrid__redes-list .contenedorGrid__redes-enlace:hover {
+            background: #F00; }
+    .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer {
+      position: relative;
+      width: 25%; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer .contenedorGrid__titulo-columLinks {
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 15px; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer .contenedorGrid__titulo-columLinks::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #f00; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer .contenedorGrid__links {
+        margin-left: -32px; }
+        .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer .contenedorGrid__links .contenedorGrid__links-list {
+          list-style: none; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer .contenedorGrid__links .contenedorGrid__links-list .contenedorGrid__links-enlace {
+            color: #999;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer .contenedorGrid__links .contenedorGrid__links-list .contenedorGrid__links-enlace:hover {
+            color: #fff; }
+    .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer {
+      width: calc(35% - 60px);
+      margin-right: 0 !important; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__titulo-columContacto {
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 15px; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__titulo-columContacto::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #f00; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__contacto {
+        position: relative; }
+        .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__contacto .contenedorGrid__contacto-list {
+          display: flex;
+          margin-bottom: 16px;
+          margin-left: -32px; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__contacto .contenedorGrid__contacto-list .contenedorGrid__contacto-spanIcon {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 10px; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__contacto .contenedorGrid__contacto-list .contenedorGrid__contacto-span {
+            color: #999; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__contacto .contenedorGrid__contacto-list .contenedorGrid__contacto-info .contenedorGrid__contacto-enlace {
+            color: #999;
+            text-decoration: none; }
+          .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer .contenedorGrid__contacto .contenedorGrid__contacto-list .contenedorGrid__contacto-info .contenedorGrid__contacto-enlace:hover {
+            color: #fff; }
+    .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__body--margin {
+      margin-right: 30px; }
 
 @font-face {
   font-family: LibreBaskervilleBold;
@@ -407,62 +549,136 @@
     word-spacing: 5px;
     line-height: 1.7rem; }
 
-.contenedorGrid__main .contenedorContacto {
+.contenedorGrid__main .contenedorAll {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 4% 0% 0% 15%;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-template-areas: "contacto redes formulario"; }
-  .contenedorGrid__main .contenedorContacto .contenedorContacto__informacion {
-    grid-area: contacto;
-    text-align: start;
-    margin-bottom: 2%; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__informacion .contenedorContacto__datos-informacion {
-      margin-bottom: 6%;
-      font-size: 5mm; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__informacion .contenedorContacto__datos-informacion .contenedorContacto__imagen-datos {
-        width: 20px; }
-  .contenedorGrid__main .contenedorContacto .contenedorContacto__redes {
-    grid-area: redes;
-    text-align: start; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes {
-      color: #000000; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes .contenedorContacto__texto-redes {
-        margin-bottom: 6%;
-        font-size: 5mm; }
-        .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes .contenedorContacto__texto-redes .contenedorContacto__imagen-redes {
-          width: 20px; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes:hover {
-      color: #000000; }
-  .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto {
-    text-align: start;
-    grid-area: formulario;
-    text-transform: uppercase;
-    background-color: #ebd8b765;
-    width: 500px;
-    margin-top: -4%;
-    margin-bottom: 5%; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto .formularioContacto__contenido .formularioContacto__texto-contenido {
-      margin-top: 1%;
-      margin-bottom: 2%;
-      margin-left: 2%; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto .formularioContacto__contenido .formularioContacto__texto-contenido .formularioContacto__input-contenido {
-        width: 90%;
-        height: 30px; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto .formularioContacto__contenido .formularioContacto__texto-contenido .formularioContacto__input-contenido--boton {
-        width: 30%;
-        height: 40px;
-        margin-right: 7%;
-        margin-bottom: 2%;
-        float: right;
-        border-style: none;
-        background-color: #c6a9a3;
-        border-radius: 20px 20px; }
+  align-items: center;
+  min-height: 100vh; }
+  .contenedorGrid__main .contenedorAll .contenedorContacto {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000; }
+    .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion {
+      position: absolute;
+      top: 40px;
+      width: 350px;
+      height: calc(100% - 80px);
+      background: #353535;
+      z-index: 1;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15); }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__toda-informacion .contenedorContacto__titulo-informacion {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__toda-informacion .contenedorContacto__contacto {
+        position: relative;
+        margin: 20px 0; }
+        .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__toda-informacion .contenedorContacto__contacto .contenedorContacto__contacto-list {
+          position: relative;
+          list-style: none;
+          display: flex;
+          margin: 20px 0;
+          cursor: pointer;
+          align-items: flex-start; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__toda-informacion .contenedorContacto__contacto .contenedorContacto__contacto-list .contenedorContacto__contacto-spanIcon {
+            width: 30px;
+            min-width: 30px; }
+            .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__toda-informacion .contenedorContacto__contacto .contenedorContacto__contacto-list .contenedorContacto__contacto-spanIcon .contenedorContacto__imagen-datos {
+              max-width: 100%;
+              filter: invert(1); }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__toda-informacion .contenedorContacto__contacto .contenedorContacto__contacto-list .contenedorContacto__contacto-span {
+            text-align: left;
+            color: #fff;
+            margin-left: 10px;
+            font-weight: 300; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__redes {
+        position: relative;
+        display: flex; }
+        .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__redes .contenedorContacto__list-redes {
+          list-style: none;
+          margin-right: 15px; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__redes .contenedorContacto__list-redes .contenedorContacto__enlace-redes {
+            text-decoration: none; }
+            .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__redes .contenedorContacto__list-redes .contenedorContacto__enlace-redes .contenedorContacto__imagen-redes {
+              filter: invert(1);
+              width: 23px; }
+    .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario {
+      position: absolute;
+      padding: 70px 50px;
+      padding-left: 250px;
+      margin-left: 150px;
+      width: calc(100% - 150px);
+      height: 100%;
+      background: #fff;
+      box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .contenedorContacto__titulo-formulario {
+        color: #111;
+        font-size: 24px;
+        font-weight: 500; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px; }
+        .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info {
+          position: relative;
+          margin-bottom: 35px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info .cajaFormulario__input-info {
+            width: 100%;
+            resize: none;
+            padding: 5px 0;
+            font-size: 18px;
+            font-weight: 300;
+            color: #333;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #777; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info .cajaFormulario__input-info:focus ~ span,
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info .cajaFormulario__input-info:valid ~ span {
+            transform: translateY(-22px);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #353535; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info .cajaFormulario__input-info--area {
+            height: 120px; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info .cajaFormulario__input-info--boton {
+            position: relative;
+            cursor: pointer;
+            background: #353535;
+            color: #fff;
+            border: none;
+            max-width: 150px;
+            padding: 12px; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info .cajaFormulario__input-info--boton:hover {
+            background: #616161; }
+          .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info .cajaFormulario__span-info {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            pointer-events: none;
+            font-size: 18px;
+            font-weight: 300;
+            transition: 0.3s; }
+        .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info--w50 {
+          width: 47%; }
+        .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info--w100 {
+          width: 100%; }
 
 /* -------------------------------------------------- PANTALLAS ---------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
@@ -486,49 +702,56 @@
     margin-left: 0%;
     margin-right: 0%; }
   /*-- CONTACTO --*/
-  .contenedorGrid__main .contenedorContacto {
-    width: 80%;
-    margin: 4% 0% 0% 15%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "contacto"  "redes"  "formulario"; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__informacion {
-      text-align: start;
-      margin-bottom: 0%; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__informacion .contenedorContacto__datos-informacion {
-        margin-bottom: 1%; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__redes {
-      text-align: start;
-      margin-bottom: 2%;
-      margin-top: 5%; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes .contenedorContacto__texto-redes {
-        margin-bottom: 1%; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario {
-      margin-top: 5%; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto {
-        margin: 0%;
-        width: 400px;
-        margin-bottom: 7%; }
+  .contenedorGrid__main .contenedorAll .contenedorContacto {
+    width: 90%;
+    min-width: auto;
+    margin: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column-reverse; }
+    .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion {
+      top: 0;
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      width: 100%;
+      padding: 25px;
+      flex-direction: column;
+      align-items: flex-start; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__redes {
+        margin-top: 30px; }
+    .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario {
+      position: relative;
+      width: 100%;
+      padding-left: 0;
+      margin-left: 0;
+      padding: 25px;
+      height: auto;
+      box-shadow: none; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info--w50 {
+        width: 100%; }
   /*-- COMBOS --*/
   .contenedorGrid__main .boxCombo .boxCombo__descripcion {
     height: 400px; }
     .contenedorGrid__main .boxCombo .boxCombo__descripcion .boxCombo__texto-descripcion {
       margin-left: 3%; }
   /*-- FOOTER --*/
-  .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columRedes-body {
-      margin-top: 20px;
-      width: 400px; }
-    .contenedorGrid__footer .contenedorGrid__footer-all .contenedorGrid__body .contenedorGrid__columContacto-body {
-      margin-top: 20px;
-      width: 400px; } }
+  .contenedorGrid__footer {
+    padding: 40px; }
+    .contenedorGrid__footer .contenedorGrid__body {
+      flex-direction: column; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer {
+        width: 100%; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columLinks-footer {
+        width: 100%; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columContacto-footer {
+        width: 100%; }
+      .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__body--margin {
+        margin-right: 0;
+        margin-bottom: 40px; } }
 
 /* -------------------------------------------------- PANTALLA TABLET ---------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1065px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .contenedorGrid .contenedorGrid__header .menuInicio {
     flex-wrap: wrap; }
     .contenedorGrid .contenedorGrid__header .menuInicio .menuInicio__container .menuElementos .menuElementos__lista .menuElementos__elemento-lista--desplegable:hover .menuElementos__submenu-elemento {
@@ -538,25 +761,31 @@
   .contenedorGrid .contenedorGrid__header .nombreTitulo {
     min-height: 0vh; }
   /*-- CONTACTO --*/
-  .contenedorGrid__main .contenedorContacto {
-    width: 80%;
-    margin: 4% 0% 0% 15%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "contacto"  "redes"  "formulario"; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__informacion {
-      text-align: start;
-      margin-bottom: 0%; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__informacion .contenedorContacto__datos-informacion {
-        margin-bottom: 1%; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__redes {
-      text-align: start;
-      margin-bottom: 2%;
-      margin-top: 2%; }
-      .contenedorGrid__main .contenedorContacto .contenedorContacto__redes .contenedorContacto__enlace-redes .contenedorContacto__texto-redes {
-        margin-bottom: 1%; }
-    .contenedorGrid__main .contenedorContacto .contenedorContacto__formulario .formularioContacto {
-      margin-top: 0%; }
+  .contenedorGrid__main .contenedorAll .contenedorContacto {
+    width: 90%;
+    min-width: auto;
+    margin: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); }
+    .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion {
+      top: 0;
+      height: 550px;
+      position: relative;
+      box-shadow: none;
+      padding: 25px;
+      flex-direction: column;
+      align-items: flex-start; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__informacion .contenedorContacto__redes {
+        margin-top: 30px; }
+    .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario {
+      position: relative;
+      width: calc(100% - 350px);
+      padding-left: 0;
+      margin-left: 0;
+      padding: 25px;
+      height: 550px;
+      box-shadow: none; }
+      .contenedorGrid__main .contenedorAll .contenedorContacto .contenedorContacto__formulario .cajaFormulario .cajaFormulario__info--w50 {
+        width: 49%; }
   /*-- COMBOS --*/
   .contenedorGrid__main .boxCombo .boxCombo__descripcion {
     height: 450px; }

@@ -104,39 +104,185 @@
 
           <div class="col-md-3 col-sm-12 col-12 mb-3 mt-3">
             <ul class="contenedorGrid__catalogoVinos-categorias">
-              <li class="menuInicio__elemento-lista menuInicio__elemento-lista--boldCenter">
-                <a class="menuInicio__enlace-elemento" href="productos.html">Categorias</a>
+              <li class="menuInicio__elemento-lista menuInicio__elemento-lista--boldCenter" data-filter="All">
+                <div class="menuInicio__enlace-elemento">Categorias</div>
               </li>
-              <li class="menuInicio__elemento-lista">
-                <a class="menuInicio__enlace-elemento" href="productos.html">Selección Especial</a>
+              <li class="menuInicio__elemento-lista" data-filter="Especial">
+                <div class="menuInicio__enlace-elemento">Selección Especial</div>
               </li>
-              <li class="menuInicio__elemento-lista">
-                <a class="menuInicio__enlace-elemento" href="productos.html">Malbec</a>
+              <li class="menuInicio__elemento-lista" data-filter="Malbec">
+                <div class="menuInicio__enlace-elemento">Malbec</div>
               </li>
-              <li class="menuInicio__elemento-lista">
-                <a class="menuInicio__enlace-elemento" href="productos.html">Bonarda</a>
+              <li class="menuInicio__elemento-lista" data-filter="Bonarda">
+                <div class="menuInicio__enlace-elemento">Bonarda</div>
               </li>
-              <li class="menuInicio__elemento-lista">
-                <a class="menuInicio__enlace-elemento" href="productos.html">Cavernet</a>
+              <li class="menuInicio__elemento-lista" data-filter="Cavernet">
+                <div class="menuInicio__enlace-elemento">Cavernet</d>
               </li>
             </ul>
           </div>
 
           <div class="col-md-8 col-sm-12 col-12 mb-3 mt-3 contenedorGrid__catalogoVinos-main">
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Brioso.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Cara_Sur.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Cara_Sur_2.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Cara_Sur_3.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Inseparable.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Nosotros.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Revolucionaria.jpg" alt="Catalogo">
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Malbec">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Brioso.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Brioso</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
             </div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Revolucionaria_2.jpg" alt="Catalogo">
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Bonarda">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Cara_Sur.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Cara Sur</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
             </div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Yocochuya.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Yocochuya_2.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Zaha.jpg" alt="Catalogo"></div>
-            <div><img class="contenedorGrid__catalogoVinos-imagen" src="catalogo/Zorzal.jpg" alt="Catalogo"></div>
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Cavernet">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Inseparable.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Inseparable</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Malbec">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Nosotros.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Nosotros</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Especial">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Revolucionaria.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Revolucionaria</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Malbec">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Yocochuya.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Yocochuya</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Malbec">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Zaha.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Zaha</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="contenedorGrid__catalogoVinos-card" data-item="Bonarda">
+              <div class="contenedorGrid__catalogoVinos-imgBox">
+                <img class="contenedorGrid__catalogoVinos-image" src="catalogo/Zorzal.jpg" alt="Catalogo">
+                <ul class="contenedorGrid__catalogoVinos-action">
+                  <li class="contenedorGrid__catalogoVinos-actionItem">
+                    <img class="contenedorGrid__catalogoVinos-actionImg" src="imagenes/Logo/Shopping-Cart.png" alt="Carrito de Compras">
+                    <span class="contenedorGrid__catalogoVinos-actionSpan">Añadir al Carrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="contenedorGrid__catalogoVinos-content">
+                <div class="contenedorGrid__catalogoVinos-productName">
+                  <h3 class="contenedorGrid__catalogoVinos-productNameText">Zorzal</h3>
+                </div>
+                <div class="contenedorGrid__catalogoVinos-productPrice">
+                  <h3 class="contenedorGrid__catalogoVinos-productPriceText">$250</h3>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -145,86 +291,97 @@
 
     <footer class="contenedorGrid__footer">
 
-      <div class="contenedorGrid__footer-all">
+      <div class="contenedorGrid__body">
 
-        <div class="contenedorGrid__body">
-
-          <div class="contenedorGrid__columInfo-body">
-            <h2 class="contenedorGrid__titulo-columInfo">Más Información</h2>
-            <p class="contenedorGrid__texto-columInfo">
-              Nuestra visión es vender vinos ricos e inolvidables que sean fieles al lugar especial del que provienen. Haciendole honor a la historia del vino argentino.
-            </p>
-          </div>
-
-          <div class="contenedorGrid__columRedes-body">
-            <h2 class="contenedorGrid__titulo-columRedes">Redes Sociales</h2>
-            
-            <div class="contenedorGrid__fila-columRedes">
-              <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/facebook-logo-black.png" alt="Icono de Facebook">
-              <a href="https://www.facebook.com/" target="_blank">
-                <label class="contenedorGrid__label-columRedes">Siguenos en Facebook</label>
-              </a>
-            </div>
-
-            <div class="contenedorGrid__fila-columRedes">
-              <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/instagram-logo-black.png" alt="Icono de Instagram">
-              <a href="https://www.instagram.com/" target="_blank">
-                <label class="contenedorGrid__label-columRedes">Siguenos en Instagram</label>
-              </a>
-            </div>
-
-            <div class="contenedorGrid__fila-columRedes">
-              <img class="contenedorGrid__imagen-columRedes" src="imagenes/Logo/icone-gmail-logo-png-noire.png" alt="Icono de Gmail">
-              <label class="contenedorGrid__label-columRedes">mail@gmail.com</label>
-            </div>
-          </div>
-
-          <div class="contenedorGrid__columContacto-body">
-            <h2 class="contenedorGrid__titulo-columContacto">Información de Contacto</h2>
+        <div class="contenedorGrid__columInfo-footer contenedorGrid__body--margin">
           
-            <div class="contenedorGrid__fila-columContacto">
-              <img class="contenedorGrid__imagen-columContacto" src="imagenes/Logo/Casa-Logo.png" alt="Icono de una Casa">
-              <label class="contenedorGrid__label-columContacto">Calle 861,
+          <h2 class="contenedorGrid__titulo-columInfo">Más Información</h2>    
+          <p class="contenedorGrid__texto-columInfo">
+            Nuestra visión es vender vinos ricos e inolvidables que sean fieles al lugar especial del que provienen. Haciendole honor a la historia del vino argentino.            
+          </p>
+
+          <ul class="contenedorGrid__redes">
+            <li class="contenedorGrid__redes-list"><a class="contenedorGrid__redes-enlace" href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li class="contenedorGrid__redes-list"><a class="contenedorGrid__redes-enlace" href=""><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          
+        </div>
+
+        <div class="contenedorGrid__columLinks-footer contenedorGrid__body--margin">
+          <h2 class="contenedorGrid__titulo-columLinks">Enlaces</h2>
+
+          <ul class="contenedorGrid__links">
+            <li class="contenedorGrid__links-list"><a class="contenedorGrid__links-enlace" href="index.html">Inicio</a></li>
+            <li class="contenedorGrid__links-list"><a class="contenedorGrid__links-enlace" href="productos.html">Productos</a></li>
+            <li class="contenedorGrid__links-list"><a class="contenedorGrid__links-enlace" href="combos.html">Combos</a></li>
+            <li class="contenedorGrid__links-list"><a class="contenedorGrid__links-enlace" href="nosotros.html">Nosotros</a></li>
+            <li class="contenedorGrid__links-list"><a class="contenedorGrid__links-enlace" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="contenedorGrid__columContacto-footer contenedorGrid__body--margin">
+          <h2 class="contenedorGrid__titulo-columContacto">Contacto</h2>
+          
+          <ul class="contenedorGrid__contacto">
+            <li class="contenedorGrid__contacto-list">
+              <span class="contenedorGrid__contacto-spanIcon"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="contenedorGrid__contacto-span">Calle 861,<br>
                 CABA
-                Buenos Aires,
-                1440</label>
-            </div>
+                Buenos Aires, <br>
+                1440</span>
+            </li>
 
-            <div class="contenedorGrid__fila-columContacto">
-              <img class="contenedorGrid__imagen-columContacto" src="imagenes/Logo/Telefono-Logo.png" alt="Icono de un telefono">
-              <label class="contenedorGrid__label-columContacto">11 2345 6789</label>
-            </div>
+            <li class="contenedorGrid__contacto-list">
+              <span class="contenedorGrid__contacto-spanIcon"><i class="fas fa-phone-alt"></i></span>
+              <p class="contenedorGrid__contacto-info"> <a class="contenedorGrid__contacto-enlace" href="tel:1158945672">11 5894 5672</a> </p>
+            </li>
 
-            <div class="contenedorGrid__fila-columContacto">
-              <img class="contenedorGrid__imagen-columContacto" src="imagenes/Logo/EMAIL-WEB.png" alt="Icono de un mensaje">
-              <label class="contenedorGrid__label-columContacto">ignacioanacional@gmail.com</label>
-            </div>
-          </div>
-
+            <li class="contenedorGrid__contacto-list">
+              <span class="contenedorGrid__contacto-spanIcon"><i class="fas fa-envelope"></i></span>
+              <p class="contenedorGrid__contacto-info"> <a class="contenedorGrid__contacto-enlace" href="mailto:mail@gmail.com">mail@gmail.com</a> </p>
+            </li>
+            
+          </ul>
         </div>
 
       </div>
-
-      <div class="contenedorGrid__capsula-footer">
-        <div class="contenedorGrid__capsula-footer--alinear">
-
-          <div class="contenedorGrid__derechos-capsula">
-            2021 Todos los Derechos Reservados | Ignacio Alonso
-          </div>
-
-          <div class="contenedorGrid__informacion-capsula">
-            <a class="contenedorGrid__enlace-capsula" href="">Informacion Compañia</a> | 
-            <a class="contenedorGrid__enlace-capsula" href="">Politica de Privacidad</a> | 
-            <a class="contenedorGrid__enlace-capsula" href="">Terminos y Condiciones</a>
-          </div>
-
-        </div>
-      </div>
-
     </footer>
+    
+    <div class="contenedorGrid__copyrightText">
+      <p>2021 Todos los Derechos Reservados | Ignacio Alonso</p>
+    </div>
 
   </div>
   <script src="js/bootstrap.js"></script>
+  <script src="https://kit.fontawesome.com/af1d59bc16.js" crossorigin="anonymous"></script>
+
+  <script>
+    let list = document.querySelectorAll('.menuInicio__elemento-lista');
+    let itemBox = document.querySelectorAll('.contenedorGrid__catalogoVinos-card');
+
+    for (let i = 0; i < list.length; i++) {
+      list[i].addEventListener('click', function(){
+        for (let j = 0; j < list.length; j++) {
+          list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+
+        let dataFilter = this.getAttribute('data-filter');
+
+        for (let k = 0; k < itemBox.length; k++) {
+          itemBox[k].classList.remove('active');
+          itemBox[k].classList.add('hide');
+
+          if (itemBox[k].getAttribute('data-item') == dataFilter || 
+          dataFilter == "All") {
+            itemBox[k].classList.remove('hide');
+            itemBox[k].classList.add('active');
+          }
+          
+        }
+      })
+    }
+  </script>
 </body>
 
 </html>

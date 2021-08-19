@@ -46,41 +46,47 @@
     /*-- CONTACTO --*/
 
     .contenedorGrid__main{
-        .contenedorContacto{
-            width: 80%;
-            margin: 4% 0% 0% 15%;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(3, auto);
-            grid-template-areas: "contacto" 
-                                "redes" 
-                                "formulario";
-            .contenedorContacto__informacion{
-                text-align: start;
-                margin-bottom: 0%;
-                .contenedorContacto__datos-informacion{
-                    margin-bottom: 1%;
-                }
-            }
-            .contenedorContacto__redes{
-                text-align: start;
-                margin-bottom: 2%;
-                margin-top: 5%;
-                .contenedorContacto__enlace-redes{       
-                    .contenedorContacto__texto-redes{
-                        margin-bottom: 1%;
+        .contenedorAll{
+            
+            .contenedorContacto{
+               width: 90%;
+               min-width: auto;
+               margin: 20px;
+               box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+               display: flex;
+               flex-direction: column-reverse;
+                .contenedorContacto__informacion{
+                    top: 0;
+                    height: auto;
+                    position: relative;
+                    box-shadow: none;
+                    width: 100%;
+                    padding: 25px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .contenedorContacto__redes{
+                        margin-top: 30px;
                     }
                 }
-            }
-            .contenedorContacto__formulario{
-                margin-top: 5%;
-                .formularioContacto{
-                    margin: 0%;
-                    width: 400px;
-                    margin-bottom: 7%;
+                .contenedorContacto__formulario{
+                    position: relative;
+                    width: 100%;
+                    padding-left: 0;
+                    margin-left: 0;
+                    padding: 25px;
+                    height: auto;
+                    box-shadow: none;
+                    .cajaFormulario{
+                        
+                        .cajaFormulario__info--w50{
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
     }
+
     /*-- COMBOS --*/
     .contenedorGrid__main{
         .boxCombo{
@@ -94,29 +100,28 @@
     }
     /*-- FOOTER --*/
     .contenedorGrid__footer{
-        
-        .contenedorGrid__footer-all{
-            
-            .contenedorGrid__body{
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                .contenedorGrid__columRedes-body{
-                    margin-top: 20px;
-                    width: 400px;
-                }
-                .contenedorGrid__columContacto-body{
-                    margin-top: 20px;
-                    width: 400px;
-                }
+        padding: 40px;
+        .contenedorGrid__body{
+            flex-direction: column;
+            .contenedorGrid__columInfo-footer{
+                width: 100%;
+            }
+            .contenedorGrid__columLinks-footer{
+                width: 100%;
+            }
+            .contenedorGrid__columContacto-footer{
+                width: 100%;
+            }
+            .contenedorGrid__body--margin{
+                margin-right: 0;
+                margin-bottom: 40px;
             }
         }
     }
 }
 
 /* -------------------------------------------------- PANTALLA TABLET ---------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1065px){
+@media only screen and (min-width: 768px) and (max-width: 1200px){
     .contenedorGrid{
         .contenedorGrid__header{
             .menuInicio{
@@ -149,34 +154,39 @@
     /*-- CONTACTO --*/
 
     .contenedorGrid__main{
-        .contenedorContacto{
-            width: 80%;
-            margin: 4% 0% 0% 15%;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(3, auto);
-            grid-template-areas: "contacto" 
-                                  "redes" 
-                                  "formulario";
-            .contenedorContacto__informacion{
-                text-align: start;
-                margin-bottom: 0%;
-                .contenedorContacto__datos-informacion{
-                    margin-bottom: 1%;
-                }
-            }
-            .contenedorContacto__redes{
-                text-align: start;
-                margin-bottom: 2%;
-                margin-top: 2%;
-                .contenedorContacto__enlace-redes{       
-                    .contenedorContacto__texto-redes{
-                        margin-bottom: 1%;
+        .contenedorAll{
+            
+            .contenedorContacto{
+               width: 90%;
+               min-width: auto;
+               margin: 20px;
+               box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+                .contenedorContacto__informacion{
+                    top: 0;
+                    height: 550px;
+                    position: relative;
+                    box-shadow: none;
+                    padding: 25px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .contenedorContacto__redes{
+                        margin-top: 30px;
                     }
                 }
-            }
-            .contenedorContacto__formulario{
-                .formularioContacto{
-                    margin-top: 0%;
+                .contenedorContacto__formulario{
+                    position: relative;
+                    width: calc(100% - 350px);
+                    padding-left: 0;
+                    margin-left: 0;
+                    padding: 25px;
+                    height: 550px;
+                    box-shadow: none;
+                    .cajaFormulario{
+                        
+                        .cajaFormulario__info--w50{
+                            width: 49%;
+                        }
+                    }
                 }
             }
         }
