@@ -91,7 +91,14 @@
     .contenedorGrid__main{
         .boxCombo{    
             .boxCombo__descripcion{
-                height: 400px;
+                height: auto;
+                .boxCombo__titulo-descripcion{
+                    
+                    .boxCombo__titulo-descripcion--size{
+                        font-size: 10mm;
+                        width: 200px;
+                    }
+                }
                 .boxCombo__texto-descripcion{
                     margin-left: 3%;
                 }

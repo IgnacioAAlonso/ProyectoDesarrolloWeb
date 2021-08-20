@@ -732,7 +732,10 @@
         width: 100%; }
   /*-- COMBOS --*/
   .contenedorGrid__main .boxCombo .boxCombo__descripcion {
-    height: 400px; }
+    height: auto; }
+    .contenedorGrid__main .boxCombo .boxCombo__descripcion .boxCombo__titulo-descripcion .boxCombo__titulo-descripcion--size {
+      font-size: 10mm;
+      width: 200px; }
     .contenedorGrid__main .boxCombo .boxCombo__descripcion .boxCombo__texto-descripcion {
       margin-left: 3%; }
   /*-- FOOTER --*/
@@ -816,12 +819,12 @@
     object-position: center center;
     box-shadow: 4px 4px 5px 0 #6a6a6a; }
   .boxCombo .boxCombo__descripcion {
-    height: 350px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .boxCombo .boxCombo__descripcion .boxCombo__titulo-descripcion {
-      height: 10%;
+      height: auto;
       width: 80%;
       margin-bottom: 4%;
       display: flex;
@@ -833,9 +836,10 @@
         align-self: center;
         width: 300px; }
     .boxCombo .boxCombo__descripcion .boxCombo__subtitulo-descripcion {
-      height: 7%; }
+      position: relative;
+      height: auto; }
     .boxCombo .boxCombo__descripcion .boxCombo__texto-descripcion {
-      height: 40%;
+      height: auto;
       display: flex;
       margin-top: 3%; }
       .boxCombo .boxCombo__descripcion .boxCombo__texto-descripcion .boxCombo__parrafo-descripcion {
@@ -846,6 +850,9 @@
       padding: 1%; }
       .boxCombo .boxCombo__descripcion .boxCombo__boton-descripcion .boxCombo__comprar-descripcion {
         color: #000000; }
+
+.boxCombo--margin {
+  margin-top: 40px; }
 
 * {
   margin: 10;

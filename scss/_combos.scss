@@ -10,12 +10,12 @@
         }
     }
     .boxCombo__descripcion{
-        height: 350px;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         .boxCombo__titulo-descripcion{
-            height: 10%;
+            height: auto;
             width: 80%;
             margin-bottom: 4%;
             display: flex;
@@ -29,10 +29,11 @@
             }
         }
         .boxCombo__subtitulo-descripcion{
-            height: 7%;
+            position: relative;
+            height: auto;
         }
         .boxCombo__texto-descripcion{
-            height: 40%;
+            height: auto;
             display: flex;
             margin-top: 3%;
             .boxCombo__parrafo-descripcion{
@@ -48,4 +49,7 @@
             }
         }
     }
+}
+.boxCombo--margin{
+    margin-top: 40px;
 }
