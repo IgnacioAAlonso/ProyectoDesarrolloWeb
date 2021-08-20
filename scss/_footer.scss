@@ -18,19 +18,23 @@ $colorText: #999;
     flex-wrap: wrap;
 }
 
+@mixin justifyCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .contenedorGrid__footer{
     position: relative;
     width: 100%;
     height: auto;
     padding: 50px 100px;
     background: $colorBack;
-    @include justifyBetween();
-    justify-content: center;
-    align-items: center;
+    @include justifyCenter();
     .contenedorGrid__body{
         @include justifyBetween();
         flex-direction: row;
-        border: solid white;
         .contenedorGrid__columInfo-footer{
             width: 40%;
             .contenedorGrid__titulo-columInfo{

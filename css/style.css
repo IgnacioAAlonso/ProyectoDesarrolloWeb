@@ -419,16 +419,14 @@
   padding: 50px 100px;
   background: #111;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .contenedorGrid__footer .contenedorGrid__body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row;
-    border: solid white; }
+    flex-direction: row; }
     .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer {
       width: 40%; }
       .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__titulo-columInfo {
