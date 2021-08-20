@@ -420,12 +420,15 @@
   background: #111;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
   .contenedorGrid__footer .contenedorGrid__body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row; }
+    flex-direction: row;
+    border: solid white; }
     .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer {
       width: 40%; }
       .contenedorGrid__footer .contenedorGrid__body .contenedorGrid__columInfo-footer .contenedorGrid__titulo-columInfo {

@@ -25,9 +25,12 @@ $colorText: #999;
     padding: 50px 100px;
     background: $colorBack;
     @include justifyBetween();
+    justify-content: center;
+    align-items: center;
     .contenedorGrid__body{
         @include justifyBetween();
         flex-direction: row;
+        border: solid white;
         .contenedorGrid__columInfo-footer{
             width: 40%;
             .contenedorGrid__titulo-columInfo{
